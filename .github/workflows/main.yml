@@ -61,7 +61,7 @@ build_and_push_to_docker_hub:
         with:
           push: true
           tags: nikitatsvetkov1990/infra_actions:latest
- deploy:
+deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
